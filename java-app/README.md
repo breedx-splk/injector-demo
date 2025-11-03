@@ -18,4 +18,20 @@ This microservice has one route:
 
 it returns a json blob that looks like this:
 
+```json
+{
+  "car": {
+    "year": 1999,
+    "make": "Toyota",
+    "model": "Camry"
+  },
+  "color": "#FF0000",
+  "driver": {
+    "firstName": "Jimmy",
+    "lastName": "Driver",
+    "age": 22
+  }
+}
+```
+
 # Dependents
