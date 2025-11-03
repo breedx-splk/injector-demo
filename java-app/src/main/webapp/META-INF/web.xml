@@ -1,0 +1,12 @@
+<web-app>
+  <display-name>kit-builder</display-name>
+  <servlet>
+    <servlet-name>BuildKit</servlet-name>
+    <servlet-class>io.opentelemetry.KitBuilderServlet</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BuildKit</servlet-name>
+    <url-pattern>/kit</url-pattern>
+  </servlet-mapping>
+</web-app>
