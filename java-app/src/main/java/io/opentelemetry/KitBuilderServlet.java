@@ -4,7 +4,6 @@ import com.google.gson.Gson;
 import io.opentelemetry.model.BuildKit;
 import io.opentelemetry.model.Car;
 import io.opentelemetry.model.Driver;
-import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -24,6 +23,7 @@ public class KitBuilderServlet extends HttpServlet {
       BuildKit buildKit = new BuildKit(car, color, driver);
 
       String body = gson.toJson(buildKit);
+      resp.setStatus(HttpServletResponse.SC_OK);
       resp.setContentType("application/json");
       resp.getWriter().println(body);
   }
