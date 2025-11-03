@@ -1,6 +1,7 @@
 package io.opentelemetry;
 
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import io.opentelemetry.model.BuildKit;
 import io.opentelemetry.model.Car;
 import io.opentelemetry.model.Driver;
@@ -11,7 +12,7 @@ import java.io.IOException;
 
 public class KitBuilderServlet extends HttpServlet {
 
-  private final Gson gson = new Gson();
+  private final Gson gson = new GsonBuilder().setPrettyPrinting().create();
 
   @Override
   protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
