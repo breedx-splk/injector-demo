@@ -1,21 +1,17 @@
 
 
-const express = require('express')
+import express from 'express'
 const app = express()
 const port = 3000
+import cars from './cars.json' with { type: "json"}
 
 const YEAR_MIN = 1955
 const YEAR_MAX = 2023 // Fast X
 
 app.get('/car', (req, res) => {
-  const year = randomYear()
-  const make = randomMake(year)
-  const model = randomModel(year, make)
-  const car = { 
-    year: year,
-    make: make,
-    model: model
-  }
+
+  const i = Math.floor(Math.random() * cars.length)
+  const car = cars[i]
   res.send(JSON.stringify(car, undefined, 2))
 })
 
