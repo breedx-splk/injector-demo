@@ -8,6 +8,11 @@ cars and one for generating drivers.
 
 ## cars
 
+```
+npm install
+npm app.js
+```
+
 Runs on port 3000.
 
 `GET /car`
@@ -18,7 +23,8 @@ returns a json blob like this:
 {
   "year": 1989,
   "make": "Toyota",
-  "model": "Camry"
+  "model": "Camry",
+  "color": "Black"
 }
 ```
 
