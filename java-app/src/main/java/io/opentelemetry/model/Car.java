@@ -6,12 +6,14 @@ public class Car {
   private final String make;
   private final String model;
   private final String color;
+  private final String url;
 
-  public Car(int year, String make, String model, String color) {
+  public Car(int year, String make, String model, String color, String url) {
     this.year = year;
     this.make = make;
     this.model = model;
     this.color = color;
+    this.url = url;
   }
 
   public int getYear() {
@@ -28,5 +30,9 @@ public class Car {
 
   public String getColor() {
     return color;
+  }
+
+  public String getUrl() {
+    return url;
   }
 }

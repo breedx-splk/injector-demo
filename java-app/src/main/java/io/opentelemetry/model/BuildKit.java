@@ -6,7 +6,7 @@ public class BuildKit {
   private final Driver driver;
   //TODO: Mabe add a little fake film narrative for funzies.
 
-  public BuildKit(Car car, String color, Driver driver) {
+  public BuildKit(Car car, Driver driver) {
     this.car = car;
     this.driver = driver;
   }

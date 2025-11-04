@@ -33,12 +33,14 @@ cp kit-builder.war webapps/
 
 ## toofurious
 
-Runs two microservices? tbd.
+Runs two microservices? One returns cars. The other tbd.
 
 ### setup
 
 ```
 limactl create --cpus 1 --memory 1 --arch x86_64 -y --name=toofurious template://debian-12
 limactl start --network=lima:user-v2 toofurious
-
+limactl shell toofurious
+sudo apt update
+sudo apt install -y nodejs npm # zzzzzzzz
 ```

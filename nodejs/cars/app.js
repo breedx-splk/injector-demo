@@ -19,7 +19,7 @@ app.get('/car', (req, res) => {
     color: rawCar.color,
     url: `/static/${rawCar.file}`
   }
-  res.send(JSON.stringify(car, undefined, 2))
+  setTimeout(() => res.send(JSON.stringify(car, undefined, 2)), 125)
 })
 
 function randomYear(){
