@@ -11,12 +11,15 @@ const YEAR_MAX = 2023 // Fast X
 app.get('/car', (req, res) => {
 
   const i = Math.floor(Math.random() * cars.length)
-  const car = cars[i]
+  const rawCar = cars[i]
+  const car = {
+    year: rawCar.year,
+    make: rawCar.make,
+    model: rawCar.model,
+    color: rawCar.color,
+    url: `/static/${rawCar.file}`
+  }
   res.send(JSON.stringify(car, undefined, 2))
-})
-
-app.listen(port, () => {
-  console.log(`Cars microservice listening on ${port}`)
 })
 
 function randomYear(){
@@ -31,3 +34,7 @@ function randomModel(year, make){
     return "Camry"
 }
 
+app.use('/static', express.static('static'))
+app.listen(port, () => {
+  console.log(`Cars microservice listening on ${port}`)
+})
