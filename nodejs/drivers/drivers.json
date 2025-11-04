@@ -1,0 +1,7 @@
+[
+    { "firstName": "Deckard", "lastName": "Shaw", "file": "deckard_shaw.png"},
+    { "firstName": "Dominic", "lastName": "Toretto", "file": "dominic_toretto.png"},
+    { "firstName": "Letty", "lastName": "Ortiz", "file": "letty_ortiz.png"},
+    { "firstName": "Han", "lastName": "Lue", "file": "han_lue.png"},
+    { "firstName": "Tej", "lastName": "Parker", "file": "tej_parker.png"}
+]
