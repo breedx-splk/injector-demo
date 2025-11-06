@@ -1,7 +1,12 @@
 [
     { "firstName": "Deckard", "lastName": "Shaw", "file": "deckard_shaw.png"},
     { "firstName": "Dominic", "lastName": "Toretto", "file": "dominic_toretto.png"},
+    { "firstName": "Elena", "lastName": "Neves", "file": "elena_neves.png"},
     { "firstName": "Letty", "lastName": "Ortiz", "file": "letty_ortiz.png"},
     { "firstName": "Han", "lastName": "Lue", "file": "han_lue.png"},
+    { "firstName": "Hobbs", "lastName": "Luke", "file": "luke_hobbs.png"},
+    { "firstName": "Mia", "lastName": "Toretto", "file": "mia_toretto.png"},
+    { "firstName": "Owen", "lastName": "Shaw", "file": "owen_shaw.png"},
+    { "firstName": "Rico", "lastName": "Santos", "file": "rico_santos.png"},
     { "firstName": "Tej", "lastName": "Parker", "file": "tej_parker.png"}
 ]
