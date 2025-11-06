@@ -1,0 +1,25 @@
+receivers:
+  otlp:
+    protocols:
+      grpc:
+      http:
+processors:
+  batch:
+exporters:
+  otlphttp:
+    # TODO: Configure for jaeger
+    traces_endpoint: "http://lima-otel.internal:4318/v1/traces"
+    metrics_endpoint: "http://lima-otel.internal:4318/v1/metrics"
+  debug: 
+    verbosity: normal
+  debug/verbose: 
+    verbosity: detailed
+service:
+  pipelines:
+    traces:
+      receivers: [otlp]
+      #processors: [batch]
+      exporters: [debug/verbose, otlphttp]
+    metrics:
+      receivers: [otlp]
+      exporters: [debug]
